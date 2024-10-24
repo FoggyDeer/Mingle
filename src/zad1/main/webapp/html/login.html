@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mingle</title>
+        <link rel="stylesheet" type="text/css" href="/css/login.css">
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/app_navigator.js"></script>
+        <script src="/js/login.js"></script>
+    </head>
+    <body>
+        <img id="logo" src="/assets/logo/Logo_Full.svg" alt="logo" class="fade-in">
+        <main>
+            <div class="styled_form_container slide-in">
+                <form id="form">
+                    <h2>Login</h2>
+                    <div class="form_container">
+                        <div id="login_error" class="fast-slide-in">
+                            <svg class="alert" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 255.69 255.69">
+                                <path class="st0" d="M127.8,0C57.2,0,0,57.2,0,127.8c0,70.6,57.2,127.9,127.8,127.9c70.6,0,127.9-57.2,127.9-127.8c0,0,0,0,0,0
+	C255.7,57.2,198.5,0,127.8,0z M127.9,215.7c-8.5,0-15.4-6.9-15.4-15.4s6.9-15.4,15.4-15.4c8.5,0,15.4,6.9,15.4,15.4
+	S136.4,215.7,127.9,215.7z M144.7,55.5l-4.5,105.3l-0.1,0.5c-2.2,13.9-22.2,14.2-24.7,0.3l-0.2-0.8L111,55.5
+	C112.3,38.4,143.7,37.7,144.7,55.5L144.7,55.5z"/>
+                            </svg>
+                            <p>Invalid username or password</p>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="username" name="username" required placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="password" name="password" required placeholder="Password">
+                        </div>
+                        <div class="form-group buttons">
+                            <button id="register" class="button" type="button" >Register</button>
+                            <button id="submit" class="button" type="submit">Login</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+</html>

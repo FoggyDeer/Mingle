@@ -1,0 +1,155 @@
+calendar .datetime-picker {
+    position: relative;
+    display: inline-block;
+}
+calendar .datetime-picker * {
+    user-select: none;
+}
+calendar .datetime-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+calendar .dropdown {
+    display: none;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    border: 1px solid #26282c;
+    background: #26282c;
+    z-index: 10;
+    color: white;
+    border-radius: 20px 20px 10px 10px;
+    box-sizing: border-box;
+    width: 320px;
+    min-height: 260px;
+    box-shadow: 0 3px 12px 0px #0000004f;
+}
+calendar .dropdown.active {
+    display: block;
+}
+calendar .tab-buttons {
+    display: flex;
+    justify-content: space-around;
+    /* margin-bottom: 10px; */
+}
+calendar .tab-button {
+    cursor: pointer;
+    padding: 8px;
+    flex: 1;
+    text-align: center;
+    font-size: 14px;
+    border-bottom: 2px solid transparent;
+}
+calendar .tab-button.active {
+    border-bottom: 2px solid #437a8e;
+}
+calendar .tab-content {
+    display: none;
+}
+calendar .tab-content.active {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+calendar .calendar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+calendar .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 0 10px;
+}
+calendar .calendar-header span {
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+calendar .calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+calendar .calendar-grid div {
+    text-align: center;
+    padding: 5px;
+    border-radius: 8px;
+    transition: 0.2s ease;
+    width: 28px;
+    font-size: 13px;
+}
+
+calendar .enabled-date{
+    color: white;
+    cursor: pointer;
+}
+
+calendar .enabled-date:hover{
+    background: #454c54;
+}
+
+calendar .disabled-date {
+    color: #4b535c;
+}
+calendar .enabled-date.selected, .time-scroll div.time-cell.selected {
+    background: #5092aa;
+    color: white;
+}
+calendar .time-picker {
+    display: flex;
+    justify-content: center;
+    /* padding: 10px; */
+    height: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+calendar .time-picker::after {
+    content: '';
+    display: flex;
+    position: absolute;
+    height: calc(100% + 10px);
+    width: 100%;
+    box-shadow: inset 0 0 68px 40px #1a1b1f, inset 0 0 70px 20px #1a1b1f;
+    pointer-events: none;
+}
+calendar .time-scroll {
+    width: 20%;
+    height: 244px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+}
+calendar .time-scroll div {
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    width: 100%;
+    padding: 8px 0;
+    border-radius: 10px;
+}
+calendar .time-scroll div:hover, calendar .time-scroll div:active {
+    background: #454c54;
+    cursor: pointer;
+} 
+
+calendar .hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+calendar .time-separator{
+    display: flex;
+    align-items: center;
+    font-size: 60px;
+    font-family: serif;
+    padding: 0 8px;
+}

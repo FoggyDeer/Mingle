@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mingle</title>
+		<style>
+			body {
+				background-color: #11171a;
+			}
+		</style>
+		<link rel="stylesheet" type="text/css" href="/css/registration.css" />
+	</head>
+	<body>
+		<img
+			id="logo"
+			src="/assets/logo/Logo_Mini.svg"
+			alt="logo"
+			class="fade-in"
+		/>
+		<main>
+			<div class="styled_form_container slide-in">
+				<form id="form">
+					<h2>Register</h2>
+					<div class="form_container">
+						<div class="form-group col_2">
+							<div class="input-wrap">
+								<div
+									id="username-taken-error"
+									class="error fast-slide-in"
+								>
+									<svg
+										class="alert"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 255.69 255.69"
+									>
+										<path
+											class="st0"
+											d="M127.8,0C57.2,0,0,57.2,0,127.8c0,70.6,57.2,127.9,127.8,127.9c70.6,0,127.9-57.2,127.9-127.8c0,0,0,0,0,0
+            C255.7,57.2,198.5,0,127.8,0z M127.9,215.7c-8.5,0-15.4-6.9-15.4-15.4s6.9-15.4,15.4-15.4c8.5,0,15.4,6.9,15.4,15.4
+            S136.4,215.7,127.9,215.7z M144.7,55.5l-4.5,105.3l-0.1,0.5c-2.2,13.9-22.2,14.2-24.7,0.3l-0.2-0.8L111,55.5
+            C112.3,38.4,143.7,37.7,144.7,55.5L144.7,55.5z"
+										/>
+									</svg>
+									<p>Username is already taken</p>
+								</div>
+								<div
+									id="username-length-error"
+									class="error fast-slide-in"
+								>
+									<svg
+										class="alert"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 255.69 255.69"
+									>
+										<path
+											class="st0"
+											d="M127.8,0C57.2,0,0,57.2,0,127.8c0,70.6,57.2,127.9,127.8,127.9c70.6,0,127.9-57.2,127.9-127.8c0,0,0,0,0,0
+            C255.7,57.2,198.5,0,127.8,0z M127.9,215.7c-8.5,0-15.4-6.9-15.4-15.4s6.9-15.4,15.4-15.4c8.5,0,15.4,6.9,15.4,15.4
+            S136.4,215.7,127.9,215.7z M144.7,55.5l-4.5,105.3l-0.1,0.5c-2.2,13.9-22.2,14.2-24.7,0.3l-0.2-0.8L111,55.5
+            C112.3,38.4,143.7,37.7,144.7,55.5L144.7,55.5z"
+										/>
+									</svg>
+									<p>Username is too short</p>
+								</div>
+								<div class="username-valid-indicator">
+									<svg
+										class="valid"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 252.9 252.9"
+									>
+										<circle
+											class="cls-1"
+											cx="126.45"
+											cy="126.45"
+											r="126.45"
+										/>
+										<path
+											class="cls-2"
+											d="M192.68,76.44a10.62,10.62,0,0,0-15,.5l-71.45,76.5L75,122.28a10.54,10.54,0,0,0-7.5-3.11h0A10.62,10.62,0,0,0,60,137.31l39,38.92a10.54,10.54,0,0,0,7.5,3.1h.19a10.78,10.78,0,0,0,7.57-3.37l78.93-84.52a10.62,10.62,0,0,0-.51-15Z"
+										/>
+									</svg>
+									<svg
+										class="invalid"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 252.9 252.9"
+									>
+										<circle
+											class="cls-3"
+											cx="126.45"
+											cy="126.45"
+											r="126.45"
+										/>
+										<path
+											class="cls-2"
+											d="M141.47,126.45l42.59-42.6a10.62,10.62,0,0,0-15-15l-42.59,42.59L83.86,68.84a10.62,10.62,0,1,0-15,15l42.59,42.6L68.84,169a10.62,10.62,0,1,0,15,15l42.6-42.59L169,184.06a10.62,10.62,0,1,0,15-15Z"
+										/>
+									</svg>
+								</div>
+								<input
+									pattern="[a-zA-Z0-9_][a-zA-Z0-9_\.\-]{0,24}"
+									type="text"
+									id="username"
+									name="username"
+									required
+									placeholder="Username"
+								/>
+							</div>
+							<div class="input-wrap">
+								<input
+									pattern="(.){1,25}"
+									type="text"
+									id="name"
+									name="name"
+									required
+									placeholder="Name"
+								/>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-wrap">
+								<div
+									id="password-complexity-error"
+									class="error fast-slide-in"
+								>
+									<svg
+										class="alert"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 255.69 255.69"
+									>
+										<path
+											class="st0"
+											d="M127.8,0C57.2,0,0,57.2,0,127.8c0,70.6,57.2,127.9,127.8,127.9c70.6,0,127.9-57.2,127.9-127.8c0,0,0,0,0,0
+            C255.7,57.2,198.5,0,127.8,0z M127.9,215.7c-8.5,0-15.4-6.9-15.4-15.4s6.9-15.4,15.4-15.4c8.5,0,15.4,6.9,15.4,15.4
+            S136.4,215.7,127.9,215.7z M144.7,55.5l-4.5,105.3l-0.1,0.5c-2.2,13.9-22.2,14.2-24.7,0.3l-0.2-0.8L111,55.5
+            C112.3,38.4,143.7,37.7,144.7,55.5L144.7,55.5z"
+										/>
+									</svg>
+									<p>Password must be more complex</p>
+								</div>
+								<div
+									id="password-length-error"
+									class="error fast-slide-in"
+								>
+									<svg
+										class="alert"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 255.69 255.69"
+									>
+										<path
+											class="st0"
+											d="M127.8,0C57.2,0,0,57.2,0,127.8c0,70.6,57.2,127.9,127.8,127.9c70.6,0,127.9-57.2,127.9-127.8c0,0,0,0,0,0
+            C255.7,57.2,198.5,0,127.8,0z M127.9,215.7c-8.5,0-15.4-6.9-15.4-15.4s6.9-15.4,15.4-15.4c8.5,0,15.4,6.9,15.4,15.4
+            S136.4,215.7,127.9,215.7z M144.7,55.5l-4.5,105.3l-0.1,0.5c-2.2,13.9-22.2,14.2-24.7,0.3l-0.2-0.8L111,55.5
+            C112.3,38.4,143.7,37.7,144.7,55.5L144.7,55.5z"
+										/>
+									</svg>
+									<p>Minimum length is 8</p>
+								</div>
+								<input
+									type="password"
+									pattern="[A-Za-z0-9]*"
+									id="password"
+									name="password"
+									required
+									placeholder="Password"
+								/>
+							</div>
+							<div id="password-complexity-indicator">
+								<div
+									id="password-complexity-1"
+									class="password-complexity"
+								></div>
+								<div
+									id="password-complexity-2"
+									class="password-complexity"
+								></div>
+								<div
+									id="password-complexity-3"
+									class="password-complexity"
+								></div>
+								<div
+									id="password-complexity-4"
+									class="password-complexity"
+								></div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="input-wrap">
+								<div
+									id="password-mismatch-error"
+									class="error fast-slide-in"
+								>
+									<svg
+										class="alert"
+										xmlns="http://www.w3.org/2000/svg"
+										viewBox="0 0 255.69 255.69"
+									>
+										<path
+											class="st0"
+											d="M127.8,0C57.2,0,0,57.2,0,127.8c0,70.6,57.2,127.9,127.8,127.9c70.6,0,127.9-57.2,127.9-127.8c0,0,0,0,0,0
+            C255.7,57.2,198.5,0,127.8,0z M127.9,215.7c-8.5,0-15.4-6.9-15.4-15.4s6.9-15.4,15.4-15.4c8.5,0,15.4,6.9,15.4,15.4
+            S136.4,215.7,127.9,215.7z M144.7,55.5l-4.5,105.3l-0.1,0.5c-2.2,13.9-22.2,14.2-24.7,0.3l-0.2-0.8L111,55.5
+            C112.3,38.4,143.7,37.7,144.7,55.5L144.7,55.5z"
+										/>
+									</svg>
+									<p>Password mismatch</p>
+								</div>
+								<input
+									type="password"
+									pattern="[A-Za-z0-9]*"
+									id="repeat-password"
+									name="repeat_password"
+									required
+									placeholder="Repeat password"
+								/>
+							</div>
+						</div>
+						<div class="form-group buttons">
+							<button id="back" class="button" type="button">
+								Back
+							</button>
+							<button id="submit" class="button" type="submit">
+								Register
+							</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</main>
+
+		<script src="/js/jquery.min.js"></script>
+		<script src="/js/app_navigator.js"></script>
+		<script src="/js/registration.js"></script>
+	</body>
+</html>
